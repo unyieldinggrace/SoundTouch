@@ -19,13 +19,11 @@
 #endif // __cplusplus
 
 #define CDECL __cdecl
-#define BOOL_TYPE BOOL
 
 #else
 
 #define SOUNDTOUCHDLL_API
 #define CDECL
-#define BOOL_TYPE bool
 
 typedef unsigned long DWORD;
 typedef unsigned short WORD;
