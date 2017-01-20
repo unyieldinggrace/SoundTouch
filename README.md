@@ -34,4 +34,4 @@ Your application will need to link against both `libSoundTouchC.so` *and* `libSo
 ```g++ -o myapp main.cpp -lSoundTouchC -lSoundTouch```
 
 ### Both Platforms
-On both Windows and Linux, your application will have to use `#include "SoundTouchDLL.h"` rather than just `#include "SoundTouch.h"`.  Yes, it is still called `SoundTouchDLL.h` on Linux ;)  That header is found in the `source/SoundTouchDLL` directory of this repo, but it is *not* installed to `/usr/local/include/soundtouch` by default like the other header files.  You can either copy it there, or add an include directory to your compile command (e.g. `g++ -o myapp -I/path/to/SoundTouch/source/SoundTouchDLL -lSoundTouchC -lSoundTouch`).
+On both Windows and Linux, your application will have to use `#include "SoundTouchDLL.h"` rather than just `#include "SoundTouch.h"`.  Yes, it is still called `SoundTouchDLL.h` on Linux ;)

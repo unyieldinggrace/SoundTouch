@@ -6,3 +6,4 @@ clean:
 	
 install:
 	cp libSoundTouchC.so /usr/local/lib/libSoundTouchC.so
+	cp SoundTouchDLL.h /usr/local/include/soundtouch/SoundTouchDLL.h
