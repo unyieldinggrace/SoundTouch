@@ -37,36 +37,7 @@
 #ifndef _SoundTouchDLL_h_
 #define _SoundTouchDLL_h_
 
-#ifdef WIN32
-
-#ifdef __cplusplus
-
-#ifdef DLL_EXPORTS
-    #define SOUNDTOUCHDLL_API extern "C" __declspec(dllexport)
-#else
-    #define SOUNDTOUCHDLL_API extern "C" __declspec(dllimport)
-#endif
-
-#else
-
-#ifdef DLL_EXPORTS
-    #define SOUNDTOUCHDLL_API __declspec(dllexport)
-#else
-    #define SOUNDTOUCHDLL_API __declspec(dllimport)
-#endif
-
-#endif // __cplusplus
-
-#define CDECL __cdecl
-#define BOOL_TYPE BOOL
-
-#else
-
-#define SOUNDTOUCHDLL_API
-#define CDECL
-#define BOOL_TYPE bool
-
-#endif // WIN32
+#include "platformvars.h"
 
 typedef void * HANDLE;
 
