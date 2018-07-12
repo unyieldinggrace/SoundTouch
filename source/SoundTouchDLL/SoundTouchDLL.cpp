@@ -261,7 +261,7 @@ SOUNDTOUCHDLL_API void CDECL soundtouch_clear(HANDLE h)
 /// 'SETTING_...' defines for available setting ID's.
 /// 
 /// \return 'TRUE' if the setting was succesfully changed
-SOUNDTOUCHDLL_API BOOL_TYPE CDECL soundtouch_setSetting(HANDLE h, 
+SOUNDTOUCHDLL_API bool CDECL soundtouch_setSetting(HANDLE h, 
                 int settingId,   ///< Setting ID number. see SETTING_... defines.
                 int value        ///< New setting value.
                 )

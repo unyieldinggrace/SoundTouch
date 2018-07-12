@@ -12,7 +12,7 @@ To compile SoundTouch on Windows, use the `make-win.bat` script in the root dire
 This will build everything you need, including `libSoundTouchDLL.dll` which is what you will link against on Windows.
 
 ### Linux
-Starting in the project root directory, run the following commands:
+Starting in the project root directory, run the following commands (you will need to install "autoconf" and "libtool" packages for these scripts to work):
 
 ```bash
 ./bootstrap
